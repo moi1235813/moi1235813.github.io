@@ -9,15 +9,27 @@
         let column = 1;
         let row = 1;
         let id = "";
+        let idnum = column + row
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
-            if (event.which === 65){
-                console.log("A")
-                id = (column + row).toString();
-                document.getElementById(id).innerHTML = "A";
-                column += 1;
+            if (idnum = 6 || idnum = 106 || idnum = 206 || idnum = 306 || idnum = 406 || idnum = 606) {
+                continue;  
+            switch(event.which){
+                case 65:
+                    console.log("A")
+                    id = (column + row).toString();
+                    document.getElementById(id).innerHTML = "A";
+                    column += 1;
+                    break;
+                case 83:
+                    console.log("S")
+                    id = (column + row).toString();
+                    document.getElementById(id).innerHTML = "S";
+                    column += 1;
+                    break;
             }  
         })
+        
     </script>
 </head>
 <body>
