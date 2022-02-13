@@ -72,8 +72,8 @@
                 var i = 0;
                 while (i <= possiblyyellowletters.length) {
                     if (word.includes(possiblyyellowletters.charAt(i))) {
-                        var variable = possiblyyellowletters.charAt(i+1)
-                        document.getElementById((variable+2)).style.backgroundColor = "yellow";
+                        var variable = possiblyyellowletters.charAt(i+1);
+                        document.getElementById((variable+2).toString()).style.backgroundColor = "yellow";
                         i++;
                     } else {
                         i++;
