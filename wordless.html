@@ -72,7 +72,7 @@
                 var i = 0;
                 while (i < possiblyyellowletters.length) {
                     if (word.includes(possiblyyellowletters.charAt(i))) {
-                        var variable = possiblyyellowletters.charAt(i+1) + 2;
+                        var variable = Number(possiblyyellowletters.charAt(i+1)) + 2;
                         console.log(variable);
                         document.getElementById(variable.toString()).style.backgroundColor = "yellow";
                         i++;
