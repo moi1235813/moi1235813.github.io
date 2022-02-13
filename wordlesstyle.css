@@ -16,6 +16,15 @@ h1{
   font-weight: bold;
 }
 
+p1{
+  text-align: center;
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-family: Arial;
+}
+
 table{
   border-spacing: 0.5rem;
   border: 0px;
@@ -47,11 +56,5 @@ td:hover{
   background-color: darkslategray;
 }
 
-a1{
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  font-size: 25px;
-  font-family: Arial;
-}
+
   
