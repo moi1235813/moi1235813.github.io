@@ -46,3 +46,12 @@ h1:hover{
 td:hover{
   background-color: darkslategray;
 }
+
+a{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Arial;
+}
+  
