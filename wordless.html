@@ -11,6 +11,7 @@
         var id = "";
         var idnum = column + row
         var word = "ASASA"
+        var possiblyyellowletters = ""
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
             if ((column+row !== 7) && (column+row !== 107) && (column+row !== 207) && (column+row !== 307) && (column+row !== 407) && (column+row !== 607)) {
@@ -39,8 +40,19 @@
                         document.getElementById(index.toString()).style.backgroundColor = "green";
                         index++;
                     } else {
-                        console.log("untrue")
+                        console.log("untrue");
+                        possiblyyellowletters.concat(document.getElementById(index.toString()).innerText, (index-2).toString());
                         index++;
+                    }
+                }
+                console.log(possiblyyellowletters);
+                var i = 0;
+                while (i <= possiblyyellowletters.length) {
+                    if (word.includes(possiblyyellowletters.charAt(i))) {
+                        document.getElementById(charAt(i+1)).style.backgroundColor = "yellow";
+                        i++;
+                    } else {
+                        i++;
                     }
                 }
             }
