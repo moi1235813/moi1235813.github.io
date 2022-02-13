@@ -1,6 +1,6 @@
 *{
-  padding: 15px;
-  margin: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 body{
@@ -8,6 +8,8 @@ body{
 }
 
 h1{
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   font-family: Arial;
   font-size: 50px;
@@ -16,7 +18,9 @@ h1{
   font-weight: bold;
 }
 
-p1{
+h2{
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   color: darkslategray;
   font-weight: bold;
@@ -26,7 +30,6 @@ p1{
 }
 
 table{
-  padding: 20px;
   border-spacing: 0.5rem;
   border: 0px;
   table-layout: fixed;
