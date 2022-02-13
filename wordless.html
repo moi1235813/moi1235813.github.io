@@ -5,16 +5,10 @@
     <title>Wordless</title>
     <meta name="viewport" content="width=1000">
     <link rel="stylesheet" href="./wordlesstyle.css" type="text/css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(document).keypress(function () {
-                if (keyCode == 65) {
-                    console.log("A");
-                    document.getElementById("11").innerHTML = 'A';
-                }
-            });
-        });
+        document.addEventListener("keydown", function(event) {
+            console.log(event.which);
+        })
     </script>
 </head>
 <body>
