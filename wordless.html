@@ -41,7 +41,7 @@
                         index++;
                     } else {
                         console.log("untrue");
-                        possiblyyellowletters.concat(document.getElementById(index.toString()).innerText, (index-2).toString());
+                        possiblyyellowletters = possiblyyellowletters.concat(document.getElementById(index.toString()).innerText, (index-2));
                         index++;
                     }
                 }
