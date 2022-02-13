@@ -11,8 +11,9 @@
         var id = "";
         const words = ['abode', 'chase', 'cabin', 'right', 'light', 'night', 'sight', 'fight', 'might', 'white', 'brave', 'crave', 'dream', 'steam', 'stare', 'flare', 'great', 'brake', 'trace', 'satin', 'haste', 'waste', 'eight', 'flake', 'poise', 'noise', 'voice', 'vocal', 'focal', 'focus', 'train', 'crate', 'sedan', 'paste', 'paint', 'faint', 'whale', 'shale', 'frail', 'grail', 'chain', 'quail', 'image', 'zebra', 'yacht', 'adopt', 'urban', 'eland', 'extra', 'hover', 'cover', 'lover']
         var word = words[Math.floor(Math.random() * words.length)];
-        var score = 0
-        var possiblyyellowletters = ""
+        console.log(word);
+        var score = 0;
+        var possiblyyellowletters = "";
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
             if (column <= 5) {
