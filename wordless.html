@@ -9,8 +9,9 @@
         var column = 1;
         var row = 1;
         var id = "";
-        var idnum = column + row
-        var word = "ABCDE"
+        const words = ['abode', 'chase', 'cabin', 'right', 'light', 'night', 'sight', 'fight', 'might', 'white', 'brave', 'crave', 'dream', 'steam', 'stare', 'flare', 'great', 'brake', 'trace', 'satin', 'haste', 'waste', 'eight', 'flake', 'poise', 'noise', 'voice', 'vocal', 'focal', 'focus', 'train', 'crate', 'sedan', 'paste', 'paint', 'faint', 'whale', 'shale', 'frail', 'grail', 'chain', 'quail', 'image', 'zebra', 'yacht', 'adopt', 'urban', 'eland', 'extra', 'hover', 'cover', 'lover']
+        var word = words[Math.floor(Math.random() * words.length)];
+        var score = 0
         var possiblyyellowletters = ""
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
@@ -46,10 +47,130 @@
                     document.getElementById(id).innerHTML = "E";
                     column += 1;
                     break;
+                case 70:
+                    console.log("F")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "F";
+                    column += 1;
+                    break;
+                case 71:
+                    console.log("G")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "G";
+                    column += 1;
+                    break;
+                case 72:
+                    console.log("H")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "H";
+                    column += 1;
+                    break;
+                case 73:
+                    console.log("I")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "I";
+                    column += 1;
+                    break;
+                case 74:
+                    console.log("J")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "J";
+                    column += 1;
+                    break;
+                case 75:
+                    console.log("K")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "K";
+                    column += 1;
+                    break;
+                case 76:
+                    console.log("L")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "L";
+                    column += 1;
+                    break;
+                case 77:
+                    console.log("M")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "M";
+                    column += 1;
+                    break;
+                case 78:
+                    console.log("N")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "N";
+                    column += 1;
+                    break;
+                case 79:
+                    console.log("O")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "O";
+                    column += 1;
+                    break;
+                case 80:
+                    console.log("P")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "P";
+                    column += 1;
+                    break;
+                case 81:
+                    console.log("Q")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "Q";
+                    column += 1;
+                    break;
+                case 82:
+                    console.log("R")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "R";
+                    column += 1;
+                    break;
                 case 83:
                     console.log("S")
                     id = "".concat(row.toString(), column.toString());
                     document.getElementById(id).innerHTML = "S";
+                    column += 1;
+                    break;
+                case 84:
+                    console.log("T")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "T";
+                    column += 1;
+                    break;
+                case 85:
+                    console.log("U")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "U";
+                    column += 1;
+                    break;
+                case 86:
+                    console.log("V")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "V";
+                    column += 1;
+                    break;
+                case 87:
+                    console.log("W")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "W";
+                    column += 1;
+                    break;
+                case 88:
+                    console.log("X")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "X";
+                    column += 1;
+                    break;
+                case 89:
+                    console.log("Y")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "Y";
+                    column += 1;
+                    break;
+                case 90:
+                    console.log("Z")
+                    id = "".concat(row.toString(), column.toString());
+                    document.getElementById(id).innerHTML = "Z";
                     column += 1;
                     break;
                 }
@@ -67,10 +188,7 @@
                         index++;
                     }
                 }
-                console.log(possiblyyellowletters);
-                if (possiblyyellowletters === "") {
-                    document.getElementById("terminationmsg").innerHTML = "YOU WON!";
-                }
+                
                 var i = 0;
                 while (i < possiblyyellowletters.length) {
                     if (word.includes(possiblyyellowletters.charAt(i))) {
@@ -85,6 +203,23 @@
                 }
                 row += 1;
                 column = 1;
+                console.log(possiblyyellowletters);
+                if (possiblyyellowletters === "") {
+                    score++;
+                    document.getElementById("terminationmsg").innerHTML = ("Score: ".concat(score));
+                    row = 1;
+                    column = 1;
+                    word = words[Math.floor(Math.random() * words.length)];
+                    var temprow = 1;
+                    var tempcolumn = 1;
+                    while (temprow < 7) {
+                        while (tempcolumn < 6) {
+                            document.getElementById("".concat(temprow.toString(), tempcolumn.toString())).innerHTML = "";
+                            tempcolumn++;
+                        }
+                        temprow++;
+                    }
+                }
                 possiblyyellowletters = "";
             }
             
@@ -139,6 +274,6 @@
             </tr>
         </table>
     </div>
-    <h2 id="terminationmsg">Good luck :)</h2>
+    <h2 id="terminationmsg">Score: 0</h2>
 </body>
 </html>
