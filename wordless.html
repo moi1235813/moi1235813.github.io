@@ -73,8 +73,8 @@
                     if (word.includes(possiblyyellowletters.charAt(i))) {
                         var variable = Number(possiblyyellowletters.charAt(i+1)) + 1;
                         console.log(variable);
-                        document.getElementById(variable.toString()).style.backgroundColor = "yellow";
-                        document.getElementById(variable.toString()).style.color = "black";
+                        document.getElementById("".concat(row.toString(), variable.toString())).style.backgroundColor = "yellow";
+                        document.getElementById("".concat(row.toString(), variable.toString())).style.color = "black";
                         i++;
                     } else {
                         i++;
