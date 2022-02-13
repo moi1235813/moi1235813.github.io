@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=1000">
     <link rel="stylesheet" href="./wordlesstyle.css" type="text/css"/>
     <script>
+        let column = 1;
+        let row = 1;
+        let id = "";
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
             if (event.which === 65){
                 console.log("A")
-                document.getElementById("11").innerHTML = "A";
+                id = (column + row).toString();
+                document.getElementById(id).innerHTML = "A";
+                column += 1;
             }  
         })
     </script>
@@ -20,11 +25,11 @@
     <div>
         <table class="center">
             <tr>
-                <td id="11"></td>
-                <td id="12"></td>
-                <td id="13"></td>
-                <td id="14"></td>
-                <td id="15"></td>
+                <td id="2"></td>
+                <td id="3"></td>
+                <td id="4"></td>
+                <td id="5"></td>
+                <td id="6"></td>
             </tr>
             <tr>
                 <td></td>
