@@ -1,6 +1,6 @@
 *{
-  padding: 0;
-  margin: 0;
+  padding: 15;
+  margin: 15;
 }
 
 body{
@@ -26,6 +26,7 @@ p1{
 }
 
 table{
+  padding: 20px;
   border-spacing: 0.5rem;
   border: 0px;
   table-layout: fixed;
