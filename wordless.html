@@ -57,13 +57,13 @@
                 console.log("this works");
                 var index = 1;
                 while (index < 6) {
-                    if (word.charAt(index-1) == document.getElementById("".concat(row.toString(), (column-1).toString())).innerText) {
+                    if (word.charAt(index-1) == document.getElementById("".concat(row.toString(), index.toString())).innerText) {
                         console.log("true");
-                        document.getElementById("".concat(row.toString(), (column-1).toString())).style.backgroundColor = "green";
+                        document.getElementById("".concat(row.toString(), index.toString())).style.backgroundColor = "green";
                         index++;
                     } else {
                         console.log("untrue");
-                        possiblyyellowletters = possiblyyellowletters.concat(document.getElementById("".concat(column, index.toString())).innerText, (index-1));
+                        possiblyyellowletters = possiblyyellowletters.concat(document.getElementById("".concat(row.toString(), index.toString())).innerText, (index-1));
                         index++;
                     }
                 }
