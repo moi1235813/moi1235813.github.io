@@ -214,6 +214,7 @@
                     var temprow = 1;
                     var tempcolumn = 1;
                     while (temprow < 7) {
+                        tempcolumn = 1;
                         while (tempcolumn < 6) {
                             document.getElementById("".concat(temprow.toString(), tempcolumn.toString())).innerHTML = "";
                             document.getElementById("".concat(temprow.toString(), tempcolumn.toString())).style.color = "white";
@@ -221,7 +222,7 @@
                             tempcolumn++;
                         }
                         temprow++;
-                        console.log("test1")
+                        console.log(temprow)
                     }
                 }
                 possiblyyellowletters = "";
