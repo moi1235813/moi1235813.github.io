@@ -35,7 +35,9 @@
                 var index = 2;
                 while (index < 7) {
                     if (word.charAt(index-2) == document.getElementById(index.toString())) {
+                        console.log("true");
                         document.getElementById(index.toString()).style.backgroundColor = "green";
+                        index++;
                     }
                 }
             }
