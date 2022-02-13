@@ -14,7 +14,7 @@
         var possiblyyellowletters = ""
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
-            if (column !== 5) {
+            if (column <= 5) {
                 switch(event.which){
                 case 65:
                     console.log("A")
