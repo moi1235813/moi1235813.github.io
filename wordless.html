@@ -70,11 +70,11 @@
                 }
                 console.log(possiblyyellowletters);
                 var i = 0;
-                while (i <= possiblyyellowletters.length) {
+                while (i < possiblyyellowletters.length) {
                     if (word.includes(possiblyyellowletters.charAt(i))) {
-                        var variable = possiblyyellowletters.charAt(i+1);
+                        var variable = possiblyyellowletters.charAt(i+1) + 2;
                         console.log(variable);
-                        document.getElementById((variable+2).toString()).style.backgroundColor = "yellow";
+                        document.getElementById(variable.toString()).style.backgroundColor = "yellow";
                         i++;
                     } else {
                         i++;
