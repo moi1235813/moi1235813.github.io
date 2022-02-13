@@ -53,13 +53,13 @@
                     column += 1;
                     break;
                 }
-            } else if ((column == 5) && (event.which == 13)) {
+            } else if ((column == 6) && (event.which == 13)) {
                 console.log("this works");
                 var index = 1;
                 while (index < 6) {
-                    if (word.charAt(index-1) == document.getElementById(concat(column, index.toString()).innerText)) {
+                    if (word.charAt(index-1) == document.getElementById(concat(row.toString(), (column-1).toString())).innerText) {
                         console.log("true");
-                        document.getElementById(index.toString()).style.backgroundColor = "green";
+                        document.getElementById(concat(row.toString(), (column-1).toString())).style.backgroundColor = "green";
                         index++;
                     } else {
                         console.log("untrue");
