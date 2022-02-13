@@ -12,7 +12,7 @@
         var idnum = column + row
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
-            if ((idnum !== 7) && (idnum !== 107) && (idnum !== 207) && (idnum !== 307) && (idnum !== 407) && (idnum !== 607)) {
+            if ((column+row !== 7) && (column+row !== 107) && (column+row !== 207) && (column+row !== 307) && (column+row !== 407) && (column+row !== 607)) {
                 switch(event.which){
                 case 65:
                     console.log("A")
