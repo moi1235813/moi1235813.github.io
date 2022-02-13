@@ -33,7 +33,7 @@
             } else if (((column+row == 7) || (column+row == 107) || (column+row == 207) || (column+row == 307) || (column+row == 407) || (column+row == 607)) && (event.which == 13)) {
                 var index = 2
                 for (let letter in word) {
-                    if letter == document.getElementById(index.toString()) {
+                    if (letter == document.getElementById(index.toString())) {
                         document.getElementById(index.toString()).style.backgroundColor = "green"
                     }
                 }
