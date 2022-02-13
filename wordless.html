@@ -12,9 +12,9 @@
         let idnum = column + row
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
-            //if (idnum = 6 || idnum = 106 || idnum = 206 || idnum = 306 || idnum = 406 || idnum = 606) {
-                //continue;  
-            switch(event.which){
+            while 
+            if (idnum != 6 && idnum != 106 && idnum != 206 && idnum != 306 && idnum != 406 && idnum != 606) {
+                switch(event.which){
                 case 65:
                     console.log("A")
                     id = (column + row).toString();
@@ -27,7 +27,10 @@
                     document.getElementById(id).innerHTML = "S";
                     column += 1;
                     break;
+                }
             }  
+                 
+            
         })
         
     </script>
