@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=1000">
     <link rel="stylesheet" href="./wordlesstyle.css" type="text/css"/>
     <script>
-        let column = 1;
-        let row = 1;
-        let id = "";
-        let idnum = column + row
+        var column = 1;
+        var row = 1;
+        var id = "";
+        var idnum = column + row
         document.addEventListener("keydown", function(event) {
             console.log(event.which);
             if ((idnum !== 7) && (idnum !== 107) && (idnum !== 207) && (idnum !== 307) && (idnum !== 407) && (idnum !== 607)) {
