@@ -34,7 +34,7 @@
                 console.log("this works");
                 var index = 2;
                 while (index < 7) {
-                    if (word.charAt(index-2) == document.getElementById(index.toString())) {
+                    if (word.charAt(index-2) == document.getElementById(index.toString()).innerText) {
                         console.log("true");
                         document.getElementById(index.toString()).style.backgroundColor = "green";
                         index++;
